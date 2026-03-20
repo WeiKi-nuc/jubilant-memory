@@ -1,0 +1,23 @@
+{
+  "habits": [
+    {
+      "id": "1",
+      "name": "3",
+      "frequency": "weekly",
+      "created_at": "2026-03-15 08:41:29"
+    },
+    {
+      "id": "2",
+      "name": "3",
+      "frequency": "weekly",
+      "created_at": "2026-03-15 08:41:34"
+    },
+    {
+      "id": "3",
+      "name": "1",
+      "frequency": "daily",
+      "created_at": "2026-03-15 08:41:39"
+    }
+  ],
+  "check_ins": {}
+}
