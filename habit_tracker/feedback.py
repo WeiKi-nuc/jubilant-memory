@@ -32,9 +32,9 @@ def get_streak_feedback(streak_days):
         return random.choice(messages)
     else:
         messages = [
-            "你是自律大师！🔥",
-            f"太厉害了！{streak_days}天连续打卡！🏆",
-            "你已经是一个习惯养成专家了！💪"
+            "你是自律大师！",
+            f"太厉害了！{streak_days}天连续打卡！",
+            "你已经是一个习惯养成专家了！"
         ]
         return random.choice(messages)
 
@@ -46,15 +46,15 @@ def get_smart_feedback(streak_days, completion_rate=None):
     quote = get_random_quote()
     
     result = f"\n{feedback}\n"
-    result += f"💡 名言警句：{quote}\n"
+    result += f"名言警句：{quote}\n"
     
     if completion_rate is not None:
         if completion_rate >= 0.8:
-            result += "📊 本周完成率很高，继续保持！\n"
+            result += "本周完成率很高，继续保持！\n"
         elif completion_rate >= 0.5:
-            result += "📊 本周表现中等，还有提升空间！\n"
+            result += "本周表现中等，还有提升空间！\n"
         else:
-            result += "📊 本周完成率较低，明天记得打卡哦！\n"
+            result += "本周完成率较低，明天记得打卡哦！\n"
     
     return result
 
